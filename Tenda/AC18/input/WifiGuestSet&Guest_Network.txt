@@ -1,0 +1,64 @@
+guestEn=0&guestEn_5g=0&guestSecurity=wpapsk&guestSecurity_5g=wpapsk&guestSsid=Tenda_VIP&guestSsid_5g=Tenda_VIP_5G&guestWrlPwd=&guestWrlPwd_5g=&effectiveTime=8&shareSpeed=0
+---
+	<div class="main-section" id="guest-setting" style="min-height: 921px;">
+                    <div class="lang-set"><a class="lang-toggle"><span>English</span>
+                    	<span>Guest Network</span>
+                    </div>
+                    <div class="main-section-content">
+                        
+                        <form id="guest-form">
+                        <input type="hidden" id="guestSecurity">
+                        <input type="hidden" id="guestSecurity_5g">
+                            <fieldset>
+                                <div class="control-group">
+                                    <label class="control-label">Guest Network:</label>
+                                    <div class="controls">
+                                        <div id="guestEn" class="btn-off"></div>
+                                    </div>
+                                </div>
+                                <div class="control-group">
+                                    <label class="control-label">2.4 GHz WiFi Name:</label>
+                                    <div class="controls">
+                                        <input type="text" id="guestSsid" name="guestSsid" maxlength="32" class="validatebox" required="required" data-options="{&quot;type&quot;:&quot;ssid&quot;}">
+                                    </div>
+                                </div>
+                                <div class="control-group">
+                                    <label class="control-label">5 GHz WiFi Name:</label>
+                                    <div class="controls">
+                                        <input type="text" id="guestSsid_5g" name="guestSsid_5g" maxlength="32" class="validatebox" required="required" data-options="{&quot;type&quot;:&quot;ssid&quot;}">
+                                        
+                                    </div>
+                                </div>
+                                <div class="control-group">
+                                    <label class="control-label">Guest Network Password:</label>
+                                    <div class="controls">
+                                        <input type="password" id="guestWrlPwd" name="guestWrlPwd" class="validatebox" maxlength="63" data-options="{&quot;type&quot;:&quot;ssidPwd&quot;,&quot;args&quot;:[8,63]}">
+                                    </div>
+                                </div>
+                                <div class="control-group">
+                                    <label class="control-label">Validity:</label>
+                                    <div class="controls">
+                                        <select id="effectiveTime" name="effectiveTime" class="input-append">
+                                            <option value="4">4 hours</option>
+                                            <option value="8">8 hours</option>
+                                            <option value="0">Always</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="control-group">
+                                    <label class="control-label">Shared Bandwidth for Guests:</label>
+                                    <div class="controls">
+                                        <span id="shareSpeed" class="validatebox" data-options="{&quot;type&quot;:&quot;speNum&quot;,&quot;args&quot;:[1,1000]}" required="required"></span>&nbsp;&nbsp;<span class="text-muted"> Mbps</span>
+                                    </div>
+                                </div>
+
+                                <div class="control-group">
+                                    <div class="red page-err" id="guest_save_msg">&nbsp;</div>
+                                </div>
+                                <div class="btn-group">
+                                    <input type="button" class="btn btn-normal" id="guest_submit" value="Save">
+                                </div>
+                            </fieldset>
+                        </form>
+                    </div>            
+                </div>

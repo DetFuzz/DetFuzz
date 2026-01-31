@@ -1,0 +1,123 @@
+deviceId=e4%3A0d%3A36%3Af3%3Af9%3A5d&deviceName=1&enable=1&time=19%3A00-21%3A00&url_enable=1&urls=h.ww.com&day=1%2C1%2C1%2C1%2C1%2C1%2C1&limit_type=1
+---
+    <fieldset class="ifmwrap-cloud">
+        <div class="legend-main" id="parental_container">
+            <div id="parental_wrap">
+
+                <div class="control-group" id="editName">
+                    <label class="control-label" style="line-height:30px;">Device Name:<span></span></label>
+                    <div class="controls controls-text">
+                        <span id="device_name" style="float:left;width:170px;overflow: hidden;text-overflow: ellipsis;white-space: nowrap;line-height:30px;"></span>
+                        <label class="none" id="device_mac"></label>
+                        <span style="margin-left:10px;line-height:30px;">
+                            <span title="Edit" class="edit-new" id="device_edit"></span>
+                        <input type="button" id="device_save" class="btn btn-mini none" value="Save"></span>
+
+                    </div>
+                </div>
+
+                <div id="addName">
+                    <div class="control-group">
+                        <label class="control-label">Device Name:<span></span></label>
+                        <div class="controls">
+                            <input style="width:190px;" type="text" maxlength="20" name="deviceName" id="deviceName" placeholder="Optional" class="placeholder-text">
+                        </div>
+                    </div>
+                    <div class="control-group">
+                        <label class="control-label">MAC Address:<span></span></label>
+                        <div class="controls">
+                            <input style="width:190px;" type="text" name="deviceMac" id="deviceMac" placeholder="00:00:00:00:00:00" class="placeholder-text"><span></span>
+                            <span class="none">Format: XX:XX:XX:XX:XX:XX</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="control-group none">
+
+                    <label class="control-label">Parental Control:<span></span></label>
+                    <div class="controls">
+                        <div id="parentcontrolEnable" class="btn-off"></div>
+
+                    </div>
+                </div>
+
+                <div id="parental_set">
+
+
+                    <div class="control-group">
+                        <label class="control-label">Internet Accessible At:<span></span></label>
+                        <div class="controls">
+                            <select name="startHour" id="startHour" class="input-mini"></select>
+                            <select name="startMin" id="startMin" class="input-mini"></select>~<select name="endHour" id="endHour" class="input-mini"></select>
+                            <select name="endMin" id="endMin" class="input-mini"></select>
+                        </div>
+                    </div>
+
+                    <div class="control-group" style="margin-bottom:4px;">
+                        <label class="control-label">In:<span></span></label>
+                        <div class="controls" style="height:30px;">
+                            <label class="radio" for="everyday">
+                                <input type="radio" name="timeType" id="everyday" value="0">Every Day</label>
+                            <label class="radio" for="thatday">
+                                <input type="radio" name="timeType" id="thatday" value="1">Specified Day</label>
+                        </div>
+                    </div>
+
+                    <div class="control-group">
+                        <label class="control-label"></label>
+                        <div class="controls">
+                            <label class="radio" for="day0" style="width:65px;">
+                                <input type="checkbox" id="day0">Sun.</label>
+                            <label class="radio" for="day1" style="width:65px;">
+                                <input type="checkbox" id="day1">Mon.</label>
+                            <label class="radio" for="day2" style="width:65px;">
+                                <input type="checkbox" id="day2">Tue.</label>
+                            <label class="radio" for="day3" style="width:65px;">
+                                <input type="checkbox" id="day3">Wed.</label>
+                            </div>
+                        <label class="control-label"></label>
+                        <div class="controls">
+                            <label class="radio" for="day4" style="width:65px;">
+                                <input type="checkbox" id="day4">Thur.</label>
+                            <label class="radio" for="day5" style="width:65px;">
+                                <input type="checkbox" id="day5">Fri.</label>
+                            <label class="radio" for="day6" style="width:65px;">
+                                <input type="checkbox" id="day6">Sat.</label>
+                        </div>
+                    </div>
+                    <div class="control-group">
+                        <label class="control-label">Website Access Limit:<span></span></label>
+                        <div class="controls">
+                            <div class="btn-off" id="whiteEnable"></div>
+                        </div>
+                    </div>
+
+                    <div id="web_limit">
+                        <div class="control-group" style="margin-bottom:4px;">
+                            <label class="control-label">Access Control Mode:<span></span></label>
+                            <div class="controls" style="height:30px;">
+                                <label class="radio" for="black">
+                                    <input type="radio" name="limitType" id="black" value="0">Blacklist</label>
+                                <label class="radio" for="white">
+                                    <input type="radio" name="limitType" id="white" value="1">Whitelist</label>
+                            </div>
+                        </div>
+                        <div class="control-group">
+                            <label class="control-label" id="limit_label">Blocked Websites:<span></span></label>
+                            <div class="controls">
+                                <input type="text" class="text placeholder-text" id="parent_urls" maxlength="319" style="width:350px;" placeholder="Please enter keywords of websites.">
+                                <label class="help-block help-tips" style="margin-top: 8px;width:350px;"></label>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="control-group">
+                    <div class="red page-err" id="msg-err"></div>
+                </div>
+                <div class="btn-group" style="margin-top:5px;">
+                    <input type="button" id="save" class="btn btn-normal" value="Save">
+                </div>
+            </div>
+        </div>
+    </fieldset>

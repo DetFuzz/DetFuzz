@@ -1,0 +1,33 @@
+remoteWebEn=0&remoteIp=0.0.0.0&remotePort=8080
+---
+<fieldset class="ifmwrap-pptp" id="content">
+        	<div class="legend-main" style="margin-top: 80px;">
+            	<div class="control-group">
+                	<label class="control-label">Remote Management:</label>
+                    <div class="controls">
+                    	<div id="remoteWebEn" class="btn-off"></div>
+                    </div>
+                </div>
+                <div id="remote_set" class="none">
+                    <div class="control-group">
+                        <label class="control-label">Remote IP Address:</label>
+                        <div class="controls">
+                            <input type="text" class="input-medium validatebox" id="remoteIp" required="required" maxlength="15" data-options="{&quot;type&quot;: &quot;remoteIp&quot;}">
+                        </div>
+                    </div>
+                    <div class="control-group">
+                        <label class="control-label">Port:</label>
+                        <div class="controls">
+                            <input type="text" class="input-medium validatebox" required="required" id="remotePort" maxlength="5" data-options="{&quot;type&quot;: &quot;num&quot;, &quot;args&quot;:[1024,65535]}">
+                        </div>
+                    </div>
+                    <div class="control-group">
+                        <div class="red page-err" id="msg-err">&nbsp;</div>
+                    </div>
+                </div>
+                <div class="btn-group">
+                	<input type="button" class="btn btn-normal" id="submit" value="Save">
+                </div>
+                <p class="nocontent-notify none" id="nocontent">Enabling web-based remote management leads to security risks if no login password is set. Please set a login password on the System page first.</p>   
+            </div>
+        </fieldset>

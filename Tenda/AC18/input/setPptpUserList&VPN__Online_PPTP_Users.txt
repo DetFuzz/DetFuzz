@@ -1,0 +1,20 @@
+list=Admin;admin123;1;0;;;
+---
+    <fieldset>
+        <div class="legend-main">
+            <div style="overflow-x:hidden;overflow-y: auto;height: 310px;">
+                <table class="table table-fixed" style="*table-layout">
+                    <tbody>
+                        <tr>
+                            <th width="32%">User Name</th>
+                            <th width="24%">Dial-In IP Address</th>
+                            <th width="24%">Assigned IP Address</th>
+                            <th width="20%">Uptime</th>
+                        </tr>
+                    </tbody>
+                    <tbody id="onlineUserList">
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </fieldset>

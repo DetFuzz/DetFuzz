@@ -1,0 +1,33 @@
+autoRebootEn=1&delayRebootEn=true&rebootTime=03:00
+---
+<fieldset class="sys-pwd">
+        <div class="legend-main" style="margin-top:80px;">
+            <div class="control-group">
+                <label class="control-label">System Reboot Schedule:</label>
+                <div class="controls">
+                    <div id="autoRebootEn" class="btn-off"></div>
+                </div>
+            </div>
+            <div id="rebootSetWrap" class="none">
+                <div class="control-group">
+                    <label class="control-label">Reboot At:</label>
+                    <div class="controls">
+                        <select class="input-small" id="rebootHour"><option value="00">00</option><option value="01">01</option><option value="02">02</option><option value="03">03</option>
+                    </div>
+                </div>
+                <div class="control-group">
+                    <label class="control-label">
+                        Delay:
+                    </label>
+                    <div class="controls">
+                        <label class="radio">
+                            <input type="checkbox" id="delayRebootEn">Delay rebooting the router when it is exchanging data with a device at a speed higher than 3 KB/s.</label>
+                    </div>
+                </div>
+                <p class="text-warning txt-center none" id="timeUpTip">Automatic maintenance takes effect only if the system time is synchronized with the internet time.</p>
+            </div>
+            <div class="btn-group">
+                <input type="button" class="btn btn-normal" id="submit" value="Save">
+            </div>
+        </div>
+    </fieldset>

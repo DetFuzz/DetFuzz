@@ -1,0 +1,226 @@
+[
+    {
+        "function_category": "wifi.set_wifi_name",
+        "fuzz_strategy": []
+    },
+    {
+        "function_category": "wifi.set_wifi_password",
+        "fuzz_strategy": []
+    },
+    {
+        "function_category": "wifi.set_security_mode",
+        "fuzz_strategy": []
+    },
+    {
+        "function_category": "wifi.schedule_wifi_time",
+        "fuzz_strategy": []
+    },
+    {
+        "function_category": "wifi.set_repeater_name",
+        "fuzz_strategy": []
+    },
+    {
+        "function_category": "wifi.set_repeater_mac",
+        "fuzz_strategy": []
+    },
+    {
+        "function_category": "wifi.set_repeater_password",
+        "fuzz_strategy": []
+    },
+    {
+        "function_category": "wifi.set_repeater_ip",
+        "fuzz_strategy": []
+    },
+    {
+        "function_category": "wifi.set_wps_pin_code",
+        "fuzz_strategy": []
+    },
+    {
+        "function_category": "wifi.set_guest_ssid",
+        "fuzz_strategy": []
+    },
+    {
+        "function_category": "wifi.set_guest_password",
+        "fuzz_strategy": []
+    },
+    {
+        "function_category": "wifi.set_device_name",
+        "fuzz_strategy": []
+    },
+    {
+        "function_category": "wifi.set_pppoe_auth",
+        "fuzz_strategy": []
+    },
+    {
+        "function_category": "wifi.set_static_ip",
+        "fuzz_strategy": []
+    },
+    {
+        "function_category": "wifi.set_wifi_power",
+        "fuzz_strategy": []
+    },
+    {
+        "function_category": "parental_control.register_device",
+        "fuzz_strategy": []
+    },
+    {
+        "function_category": "parental_control.set_internet_time_limit",
+        "fuzz_strategy": []
+    },
+    {
+        "function_category": "vpn.set_server_ip_range",
+        "fuzz_strategy": []
+    },
+    {
+        "function_category": "vpn.set_user_list",
+        "fuzz_strategy": []
+    },
+    {
+        "function_category": "usb.set_usb_ftp_shared_path",
+        "fuzz_strategy": []
+    },
+    {
+        "function_category": "usb.set_usb_ftp_user_credentials",
+        "fuzz_strategy": []
+    },
+    {
+        "function_category": "usb.set_dlna_media_path",
+        "fuzz_strategy": []
+    },
+    {
+        "function_category": "bandwidth.set_channel_bandwidth",
+        "fuzz_strategy": []
+    },
+    {
+        "function_category": "bandwidth.set_qos_band",
+        "fuzz_strategy": []
+    },
+    {
+        "function_category": "power.set_transmit_power",
+        "fuzz_strategy": []
+    },
+    {
+        "function_category": "power.set_power_schedule",
+        "fuzz_strategy": []
+    },
+    {
+        "function_category": "led.set_led_control",
+        "fuzz_strategy": []
+    },
+    {
+        "function_category": "filter.set_target_ip",
+        "fuzz_strategy": []
+    },
+    {
+        "function_category": "filter.set_target_port",
+        "fuzz_strategy": []
+    },
+    {
+        "function_category": "filter.set_target_mac",
+        "fuzz_strategy": []
+    },
+    {
+        "function_category": "firewall.set_firewall",
+        "fuzz_strategy": []
+    },
+    {
+        "function_category": "iptv.set_iptv_vlan_conf_nvram",
+        "fuzz_strategy": []
+    },
+    {
+        "function_category": "route.add_static_route",
+        "fuzz_strategy": []
+    },
+    {
+        "function_category": "dns.set_ddns_auth",
+        "fuzz_strategy": []
+    },
+    {
+        "function_category": "dns.set_server_addr",
+        "fuzz_strategy": []
+    },
+    {
+        "function_category": "dmz.set_dmz_host",
+        "fuzz_strategy": []
+    },
+    {
+        "function_category": "upnp.set_upnp_port",
+        "fuzz_strategy": []
+    },
+    {
+        "function_category": "wan.set_static_ip",
+        "fuzz_strategy": []
+    },
+    {
+        "function_category": "wan.set_pppoe_password",
+        "fuzz_strategy": []
+    },
+    {
+        "function_category": "wan.set_mac_mtu",
+        "fuzz_strategy": []
+    },
+    {
+        "function_category": "wan.set_op_mode_cfg",
+        "fuzz_strategy": []
+    },
+    {
+        "function_category": "dhcp.set_dhcp_reservation",
+        "fuzz_strategy": []
+    },
+    {
+        "function_category": "lan.set_static_ip",
+        "fuzz_strategy": []
+    },
+    {
+        "function_category": "lan.set_lan_mask",
+        "fuzz_strategy": []
+    },
+    {
+        "function_category": "lan.set_subnet_mask",
+        "fuzz_strategy": []
+    },
+    {
+        "function_category": "time.set_sleep_schedule",
+        "fuzz_strategy": []
+    },
+    {
+        "function_category": "time.set_system_time",
+        "fuzz_strategy": []
+    },
+    {
+        "function_category": "time.schedule_wifi_time",
+        "fuzz_strategy": []
+    },
+    {
+        "function_category": "Diagnostic.set_target_ip",
+        "fuzz_strategy": []
+    },
+    {
+        "function_category": "Diagnostic.set_packet_size",
+        "fuzz_strategy": []
+    },
+    {
+        "function_category": "Diagnostic.set_Diagnostic_count",
+        "fuzz_strategy": []
+    },
+    {
+        "function_category": "login.set_login_password",
+        "fuzz_strategy": []
+    },
+    {
+        "function_category": "login.set_language",
+        "fuzz_strategy": []
+    },
+    {
+        "function_category": "log.get_export_logs",
+        "fuzz_strategy": []
+    },
+    {
+        "function_category": "remote_control.set_remote_web_config",
+        "fuzz_strategy": []
+    },
+    {
+        "function_category": "diagnostic.ping_diagnosis",
+        "fuzz_strategy": []
+    }
+]

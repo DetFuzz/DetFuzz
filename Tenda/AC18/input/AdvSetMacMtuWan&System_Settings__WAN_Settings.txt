@@ -1,0 +1,90 @@
+wanMTU=1500&wanSpeed=0&cloneType=0&mac=C8:3A:35:83:B5:59
+---
+        <fieldset class="ifmwrap-mac">
+        	<div class="legend-main">
+                <h2 class="legend" id="wan1LabelTips">WAN1 Settings</h2>
+                <div class="control-group">
+                	<label class="control-label">MTU:</label>
+                    <div class="controls">
+                    	<input type="text" id="wanMTU" style="width:190px;" name="wanMTU" maxlength="4" required="required" class="validatebox input-small" data-options="{type: num, args:[576,1500]}">
+                    </div>
+                </div>
+                <div class="control-group">
+                	<label class="control-label">Speed:</label>
+                    <div class="controls">
+                    	<select id="wanSpeed" class="input-large">
+                        	<option value="0">1000 Mbps auto-negotiation</option>
+                            <option value="1">10 Mbps FDX</option>
+                            <option value="2">10 Mbps HDX</option> 
+                            <option value="3">100 Mbps FDX</option>
+                            <option value="4">100 Mbps HDX</option>
+                        </select>
+                    </div>
+                </div>
+                <div id="mac_set">
+                    <div class="control-group">
+                        <label class="control-label">MAC Address:</label>
+                        <div class="controls">
+                            <select id="cloneType" name="cloneType" class="input-large">
+                            	<option value="0">Default</option>
+                                <option value="1">Clone local MAC address</option>
+                                <option value="2">Set MAC address</option>
+                            </select>
+                            <span id="macaddress" class="none">
+                                <span id="mac-address" class="controls-text"></span>
+                            </span>
+                            <span id="other-mac">
+                                <span><input type="text" name="mac" id="mac" maxlength="17" required="required" class="validatebox" style="width:193px;" data-options="{type:mac}"></span>
+                            </span>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div id="wan2SetWrap" class="none">
+                    <h2 class="legend">WAN2 Settings</h2>
+                    <div class="control-group">
+                        <label class="control-label">MTU:</label>
+                        <div class="controls">
+                            <input type="text" id="wanMTU2" style="width:190px;" name="wanMTU2" maxlength="4" required="required" class="validatebox input-small" data-options="{type: num, args:[576,1500]}">
+                        </div>
+                    </div>
+                    <div class="control-group">
+                        <label class="control-label">Speed:</label>
+                        <div class="controls">
+                            <select id="wanSpeed2" class="input-large">
+                                <option value="0">1000 Mbps auto-negotiation</option>
+                                <option value="1">10 Mbps FDX</option>
+                                <option value="2">10 Mbps HDX</option> 
+                                <option value="3">100 Mbps FDX</option>
+                                <option value="4">100 Mbps HDX</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+                    <div class="control-group">
+                        <label class="control-label">MAC Address:</label>
+                        <div class="controls">
+                            <select id="cloneType2" name="cloneType2" class="input-large">
+                                <option value="0">Default</option>
+                                <option value="1">Clone local MAC address</option>
+                                <option value="2">Set MAC address</option>
+                            </select>
+                            <span id="macaddress2" class="none">
+                                <span id="mac-address2" class="controls-text"></span>
+                            </span>
+                            <span id="other-mac2">
+                                <span><input type="text" name="mac2" id="mac2" maxlength="17" required="required" class="validatebox" style="width:193px;" data-options="{type:mac}"></span>
+                            </span>
+                        </div>
+                    </div>
+                    
+                </div>
+
+                <div class="control-group">
+                    <div class="red page-err" id="msg-err"></div>
+                </div>
+                <div class="btn-group">
+                	<input type="button" class="btn btn-normal" id="submit" value="Save">
+                </div>
+            </div>
+        </fieldset>

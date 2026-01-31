@@ -1,0 +1,32 @@
+timePeriod=86400&ntpServer=time.windows.com&timeZone=20
+---
+        <fieldset class="ifmwrap-time">
+            <input type="hidden" id="time">
+        	<div class="legend-main" style="margin-top: 80px;">
+            	
+                <div id="sync_set">
+                    <div class="control-group">
+                        <label class="control-label">Select Time Zone:</label>
+                        <div class="controls">
+                            <select id="timeZone" style="width:300px;">
+                                <option value="0">(GMT-12:00) Eniwetok Island</option>
+                                <option value="1">(GMT-11:00) Samoa</option>
+                            </select>
+                        </div>
+                    </div> 
+                    <div class="control-group">
+                        <label class="control-label">Current Time:</label>
+                        <div class="controls controls-text">
+                            <span id="sysTime">2025-12-19 14:49:27</span>
+                            <span>&nbsp;&nbsp;</span>
+                            <span id="syncInternetTips" class="txt-help-tips">(synchronized with internet time)</span>
+                        </div>
+                    </div>
+                <div class="control-group">
+                    <div class="red page-err" id="msg-err">&nbsp;</div>
+                </div>
+                <div class="btn-group">
+                	<input type="button" class="btn btn-normal" id="submit" value="Save">
+                </div>
+            </div>
+        </fieldset>

@@ -1,0 +1,134 @@
+lanIp=192.168.0.1&lanMask=255.255.255.0&dhcpEn=1&startIp=192.168.0.100&endIp=192.168.0.200&leaseTime=86400&lanDnsAuto=1&lanDns1=&lanDns2=
+---
+<form id="wan1SetWrap">
+                                <div class="control-group">
+                                    <label id="wanLabelTis" class="control-label">WAN Port:</label>
+                                    <div class="controls controls-text">
+                                        <span id="lineUpImg" class="line-up"></span>
+                                        <span id="lineUpTips">Ethernet cable connected</span>
+                                    </div>
+                                </div>
+                                <div class="control-group">
+                                    <label class="control-label">Connection Type:</label>
+                                    <div class="controls">
+                                        <select name="netWanType" class="input-append" id="netWanType">
+                                        </select>
+                                        <br>
+                                        <span class="select-tab red"></span>
+                                    </div>
+                                </div>
+                                <div id="ppoe_set" class="none">
+                                    <div class="control-group">
+                                        <label class="control-label">ISP User Name:</label>
+                                        <div class="controls">
+                                            <input type="text" class="validatebox" id="adslUser" name="adslUser" maxlength="128" required="required" data-options="{type:ppoe}">
+                                        </div>
+                                    </div>
+                                    <div class="control-group">
+                                        <label class="control-label">ISP Password:</label>
+                                        <div class="controls">
+                                            <input type="password" class="validatebox" id="adslPwd" name="adslPwd" maxlength="128" required="required" data-options="{type:ppoe}">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="double_access" class="none">
+                                    <div id="serverInfo">
+                                        <div class="control-group">
+                                            <label class="control-label">Server IP Address/Domain Name:</label>
+                                            <div class="controls">
+                                                <input type="text" class="validatebox" id="vpnServer" maxlength="128" name="vpnServer" required="required" data-options="{type:domain}">
+                                            </div>
+                                        </div>
+                                        <div class="control-group">
+                                            <label class="control-label">User Name:</label>
+                                            <div class="controls">
+                                                <input type="text" class="validatebox" id="vpnUser" name="vpnUser" maxlength="128" required="required" data-options="{type:ppoe}">
+                                            </div>
+                                        </div>
+                                        <div class="control-group">
+                                            <label class="control-label">Password:</label>
+                                            <div class="controls">
+                                                <input type="password" class="validatebox" id="vpnPwd" name="vpnPwd" maxlength="128" required="required" data-options="{type:ppoe}">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="control-group">
+                                        <label class="control-label head-text">Address Type:</label>
+                                        <div class="controls">
+                                            <label class="radio"><input type="radio" name="vpnWanType" value="1" checked="">Dynamic IP Address</label>
+                                            <label class="radio">
+                                            <input type="radio" name="vpnWanType" value="0">Static IP Address</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="control-group" id="dnsType">
+                                    <label class="control-label">DNS Settings:</label>
+                                    <div class="controls">
+                                        <select name="dnsAuto" class="input-append" id="dnsAuto">
+                                            <option value="1">Automatic</option>
+                                            <option value="0">Manual</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                
+                                <div id="static_ip" class="none">
+                                    <div class="control-group">
+                                        <label class="control-label">IP Address:</label>
+                                        <div class="controls">
+                                            <input type="text" class="validatebox" id="staticIp" name="staticIp" maxlength="15" required="required" data-options="{type:ip}">
+                                        </div>
+                                    </div>
+                                    <div class="control-group">
+                                        <label class="control-label">Subnet Mask:</label>
+                                        <div class="controls">
+                                            <input type="text" class="validatebox" id="mask" name="mask" maxlength="15" required="required" data-options="{type:wanmask}">
+                                        </div>
+                                    </div>
+                                    <div class="control-group">
+                                        <label class="control-label">Default Gateway:</label>
+                                        <div class="controls">
+                                            <input type="text" class="validatebox" id="gateway" name="gateway" maxlength="15" required="required" data-options="{type:ip,msg:Please enter a correct gateway IP address.}">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="dnsContainer">
+                                    <div class="control-group">
+                                        <label class="control-label">Primary DNS Server:</label>
+                                        <div class="controls">
+                                            <input type="text" class="validatebox" id="dns1" name="dns1" maxlength="15" data-options="{type:ip,msg:Please enter the IP address of the primary DNS server.}">
+                                        </div>
+                                    </div>
+                                    <div class="control-group">
+                                        <label class="control-label">Secondary DNS Server:</label>
+                                        <div class="controls">
+                                            <input type="text" class="validatebox" id="dns2" name="dns2" maxlength="15" data-options="{type:ip,msg:Please enter the IP address of the secondary DNS server.}">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="control-group none">
+                                    <label class="control-label">Bandwidth:</label>
+                                    <div class="controls">
+                                        <span id="downSpeedLimit" class="validatebox" data-options="{type:num,args:[1,1000]}" required="required"></span>
+                                        <span>&nbsp;</span>
+                                        <span class="text-muted">Mbps</span>
+                                    </div>
+                                </div>
+                                <div id="connect_message" class="none" style="clear:both">
+                                    <div class="control-group" id="connectStatusWrap">
+                                        <label class="control-label">Connection Status:</label>
+                                        <div class="controls controls-text"><span id="connectStatus"></span></div>
+                                    </div>
+                                    <div class="control-group" id="connect_time">
+                                        <label class="control-label">Connection Duration:</label>
+                                        <div class="controls controls-text" id="connectTime"></div>
+                                    </div>
+                                </div>
+                                <div class="control-group" style="clear:both">
+                                    <div class="controls">
+                                        <div id="message-err" class="red">&nbsp;</div>
+                                    </div>
+                                </div>
+                                <div class="btn-group control-group">
+                                    <input type="button" id="wan_submit" class="btn btn-normal" value="Connect">
+                                </div>
+                            </form>

@@ -1,0 +1,27 @@
+dmzEn=0&dmzIp=192.168.0.100
+---
+<fieldset class="ifmwrap-dhcp">
+        	<div class="legend-main" style="margin-top:60px;">
+            	<div class="control-group">
+                	<label class="control-label">DMZ Host:</label>
+                    <div class="controls">
+                    	<div id="dmzEn" class="btn-on"></div>
+                    </div>
+                </div>
+                <div id="dmz_set" class="">
+                    <div class="control-group">
+                        <label class="control-label">DMZ Host IP Address:</label>
+                        <div class="controls">
+                            <span class="controls-text" id="dmz_net">.undefined.undefined.</span>
+                            <input type="text" class="input-mini-medium validatebox" required="required" id="hostIp" maxlength="3" data-options="{&quot;type&quot;: &quot;num&quot;, &quot;args&quot;:[1,254]}">
+                        </div>
+                    </div>
+                    <div class="control-group">
+                        <div class="red page-err" id="msg-err">&nbsp;</div>
+                    </div>
+                </div>
+                <div class="btn-group">
+                	<input type="button" class="btn btn-normal" id="submit" value="Save">
+                </div>
+            </div>
+        </fieldset>

@@ -1,0 +1,33 @@
+firewallEn=1111
+---
+<fieldset class="ifmwrap-dhcp">
+        <div class="legend-main" id="firewall" style="margin-top: 60px;">
+            <div class="control-group">
+                <label class="control-label">ICMP Flood Attack Defense:</label>
+                <div class="controls">
+                    <div id="icmpEn" class="btn-off"></div>
+                </div>
+            </div>
+            <div class="control-group">
+                <label class="control-label">TCP Flood Attack Defense:</label>
+                <div class="controls">
+                    <div id="tcpEn" class="btn-off"></div>
+                </div>
+            </div>
+            <div class="control-group">
+                <label class="control-label">UDP Flood Attack Defense:</label>
+                <div class="controls">
+                    <div id="udpEn" class="btn-off"></div>
+                </div>
+            </div>
+            <div class="control-group">
+                <label class="control-label">Forbid WAN Ping:</label>
+                <div class="controls">
+                    <div id="wanEn" class="btn-off"></div>
+                </div>
+            </div>
+            <div class="btn-group">
+                <input type="button" class="btn btn-normal" id="submit" value="Save">
+            </div>
+        </div>
+    </fieldset>

@@ -27,7 +27,7 @@ Executes generated POC scripts against the target device. Successful POCs are sa
 
 ---
 
-## Project Structure
+## Project-Structure
 
 ```bash
 DetFuzz/

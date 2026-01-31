@@ -3,7 +3,7 @@
 **DetFuzz: A Semantic-Guided Fuzzing Framework via Operation Logic Inference for Black-box IoT Devices**
 
 - [Usage](#Usage)
-- [Project Structure](##Project-Structure)
+- [Project Structure](#Project-Structure)
 
 ---
 

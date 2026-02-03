@@ -266,7 +266,7 @@ def main() -> None:
     if len(sys.argv) > 1 and sys.argv[1] == "verify":
         verify_only(vendor, product)
     else:
-        delete_success_tag = input("Please enter ('1' to clear the "success" folder, '0' to skip): ")
+        delete_success_tag = input("Please input (input '1' to empty the success folder, '0' not do that): ")
         execute_vendor_product(vendor, product, delete_success_tag)
 
 
